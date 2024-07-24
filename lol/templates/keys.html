@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>API Key Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/ABC.css">
+</head>
+<body>
+    <header>
+        <h1>API Key Management</h1>
+    </header>
+    <main>
+        <ul>
+            {% for key in keys %}
+                <li>
+                    <i class="fa fa-check"> </i> {{ key }}
+                    <form method="post">
+                        <input type="hidden" name="key" value="{{ key }}">
+                        <input type="hidden" name="action" value="delete">
+                        <button type="submit"><i class="fa fa-trash"></i></button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <form method="post">
+            <label for="key">Add Key:</label>
+            <input type="text" name="key" id="key" required>
+            <input type="hidden" name="action" value="add">
+            <button type="submit"><i class="fa fa-plus"></i></button>
+        </form>
+    </main>
+</body>
+</html>

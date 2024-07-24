@@ -1,0 +1,14 @@
+config:
+  blacklist:
+  - .edu
+  - 1.1.1.1
+  - 127.0.0.1
+  - .gov
+  - .mil
+  - AS13335
+  keys:
+  - testjwudbwj # key user
+  - jsuwbdu # key user
+  masterkey: TuanCuTo30cm@ # key admin
+  maxtime: 1200 # như cái tên max time
+  webport: 7331 # port domain vd 1.1.1.1:80/attack

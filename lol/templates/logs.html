@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logs</title>
+</head>
+<body>
+	<h1>Logs</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Key</th>
+				<th>Host</th>
+				<th>Port</th>
+				<th>Duration</th>
+				<th>Method</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for log in logs %}
+			<tr>
+				<td>{{ log.time }}</td>
+				<td>{{ log.key }}</td>
+				<td>{{ log.host }}</td>
+				<td>{{ log.port }}</td>
+				<td>{{ log.duration }}</td>
+				<td>{{ log.method }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>

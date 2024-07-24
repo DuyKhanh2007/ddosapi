@@ -1,0 +1,19 @@
+<h1>Key Management</h1>
+<form method="post">
+  <label for="key">Key:</label>
+  <input type="text" id="key" name="key">
+  <br>
+  <label for="action">Action:</label>
+  <select id="action" name="action">
+      <option value="add">Add</option>
+      <option value="delete">Delete</option>
+  </select>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+{% if error %}
+  <script>
+      alert("{{ error }}");
+  </script>
+{% endif %}
